@@ -46,7 +46,8 @@ header ul a {
 .hero-section img {
   margin-right: 450px;
   padding-top: 50px;
-  width: 80%;
+  width: 85%;
+  animation: Anim2 10s ease 0s infinite normal forwards;
 }
 .skills-section {
   position: relative;
@@ -106,6 +107,7 @@ header ul a {
   font-size: 1rem;
   outline: 3px dotted white;
   outline-offset: 10px;
+  animation: Anim3 8s ease 0s infinite normal forwards;
 }
 .cards img {
   height: 120px;
@@ -115,6 +117,7 @@ header ul a {
 .progress {
   padding-top: 20px;
   width: 75%;
+  animation: Anim3 8s ease 0s infinite normal forwards;
 }
 
 /* CSS */
@@ -234,5 +237,74 @@ header ul a {
 
   100% {
     transform: translate(0);
+  }
+}
+@keyframes Anim2 {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+@keyframes Anim3 {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
   }
 }
